@@ -8,11 +8,13 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
+import { LoginGuardGuard } from '../services/service.index';
 
 const pagesRoutes : Routes=[
   {
     path: '',
     component:PagesComponent,
+    canActivate:[LoginGuardGuard],
     children:[
       {path: 'dashboard',component: DashboardComponent,data:[{titulo:'Dashboard'},{descripcion:'Descripcion de prueba para una pagina'}]},//de esta manera mando informacion en la ruta y para el meta tag
       {path:'progress',component:ProgressComponent,data:{titulo:'Progress'}},

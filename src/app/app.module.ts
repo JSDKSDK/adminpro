@@ -19,13 +19,13 @@ import { RegistrerComponent } from './login/registrer.component';
 //temporal
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegistrerComponent,
-
-  ],
+    RegistrerComponent
+   ],
   imports: [
     BrowserModule,
     APP_ROUTES,

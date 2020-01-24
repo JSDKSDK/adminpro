@@ -9,8 +9,8 @@ import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component
 
 const appRoutes: Routes =[
 
-  {path: 'login',component :LoginComponent},
-  {path: 'registrer',component:RegistrerComponent},
+  {path: 'login',component :LoginComponent,data:[{titulo:'Login'},{descripcion:'Login para el Usuario'}]},
+  {path: 'registrer',component:RegistrerComponent,data:[{titulo:'REGISTRER'},{descripcion:'Registro para el Usuario'}]},
   {path:'**',component:NopagefoundComponent}
 
 
